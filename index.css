@@ -1,0 +1,80 @@
+/* 1. ROOT VARIABLES - Change colors and fonts easily here */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --light-bg: #f8f9fa;
+  --text-dark: #333333;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --max-width: 1200px;
+}
+
+/* 2. RESET & BASE STYLES - Ensures consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--light-bg);
+}
+
+/* 3. LAYOUT CONTAINER - Centers content on the screen */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 4. TYPOGRAPHY - Heading and paragraph spacing */
+h1, h2, h3 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* 5. COMPONENTS - Buttons and Navigation links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* 6. RESPONSIVE DESIGN - Mobile-first layout adjustment */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+}
